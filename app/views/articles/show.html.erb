@@ -1,0 +1,33 @@
+<h2 align="center">Title: <%= @article.title %></h2>
+
+<div class="well col-xs-6 col-xs-offset-3">
+
+  <h4 class="center description"><strong>Description:</strong></h4>
+
+  <hr>
+
+  <%= simple_format(@article.description) %>
+
+  <div class="articles-meta-details">
+    <strong>Seller: </strong> <%= @article.user.username if @article.user %> <br>
+    <strong>Contact number:</strong> <%= @article.user.contact_no if @article.user %> <br>
+           <strong>Price: </strong><%= @article.price %>\- Rs <br>
+
+
+
+  </div>
+
+
+
+  <div class="article-actions">
+
+
+    <%= link_to "View all Products", articles_path, class: "btn btn-xs btn-success" %>
+
+  </div>
+
+</div>
+
+<div class="col-xs-6 col-xs-offset-3">
+  <%= image_tag(@article.cover.url, size: "170x170") if @article.cover? %>
+</div>
