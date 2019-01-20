@@ -1,24 +1,16 @@
 # README
+Gems needed to run this file:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+-> Rails version 5.2.2
 
-Things you may want to cover:
+-> Ruby version 2.4.5
 
-* Ruby version
+-> Carrierwave
 
-* System dependencies
+-> Bootstrap
 
-* Configuration
+-> jquery-rails
 
-* Database creation
+-> bcrypt
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+-> minimagic
